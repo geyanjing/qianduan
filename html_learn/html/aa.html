@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图实现</title>
+    <style type="text/css">
+
+        /*标题样式*/
+        p{
+            text-align: center;
+            font-size: 25px;
+            color: cadetblue;
+            font-family: fantasy;
+
+        }
+
+        #imgList li{
+            list-style-type: none;
+        }
+        .img-slide{
+            max-width: 100%;
+            height: auto;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+<p>图片轮播</p>
+<script type="text/javascript">
+    var index=0;
+    //改变图片
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,2000);
+</script>
+-->
+<div id="outer">
+    <ul id="imgList">
+        <li><img class="img-slide" src="../images/building.jpg" alt="1" width="1599px" height="289px"></li>
+        <li><img class="img-slide" src="../images/flowers.jpg" alt="2" width="1599px" height="289px"></li>
+        <li><img class="img-slide" src="../images/night.jpg" alt="3" width="1599px" height="289px"></li>
+    </ul>
+</div>
+</body>
+
+</html>
